@@ -1,5 +1,6 @@
 "use client";
 
+import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
 export default function Header() {
@@ -14,8 +15,11 @@ export default function Header() {
               className="w-full flex-none text-xl text-white font-semibold p-6"
               href="/"
               aria-label="Brand">
-              AI-UI-Components-Generator
+              AICodez | UI Edition
             </Link>
+          </div>
+          <div className="flex">
+            <UserButton />
           </div>
         </nav>
       </header>
